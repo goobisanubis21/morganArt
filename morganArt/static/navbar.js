@@ -8,6 +8,7 @@ $(document).ready(function() {
 
     home.on("click", function() {
         window.location.href = "index.html"
+        console.log("home");
     });
 
     var gallery = $("<h3>");
@@ -17,6 +18,7 @@ $(document).ready(function() {
 
     gallery.on("click", function() {
         window.location.href = "gallery.html"
+        console.log("gallery");
     });
 
     var about = $("<h3>");
@@ -26,6 +28,7 @@ $(document).ready(function() {
 
     about.on("click", function() {
         window.location.href = "aboutme.html"
+        console.log("about me");
     });
     var contact = $("<h3>");
     contact.text("Contact");
@@ -34,6 +37,7 @@ $(document).ready(function() {
 
     contact.on("click", function() {
         window.location.href = "contact.html"
+        console.log("contact");
     });
     
 

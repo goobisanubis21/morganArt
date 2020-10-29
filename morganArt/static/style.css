@@ -5,10 +5,19 @@
 #morgan-danton {
     font-size: 50px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 #nav-bar h3 {
     display: inline;
     margin: 10px;
     
+}
+
+#featured-painting {
+    text-align: center;
+}
+
+#featured-painting img{
+    width: 40%;
 }
