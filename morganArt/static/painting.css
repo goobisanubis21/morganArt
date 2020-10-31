@@ -1,0 +1,8 @@
+#featured-painting {
+    text-align: center;
+}
+
+#featured-painting img{
+    width: 40%;
+    cursor: pointer;
+}

@@ -152,21 +152,16 @@ body {
     all: unset;
 }
 
-#paypal-button-container{
-    text-align: center;
+#nav-bar {
+    background-color: rgb(235, 253, 200);
+    padding: 20px;
 }
 
-#morgan-danton {
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-#featured-painting {
-    text-align: center;
-}
-
-#featured-painting img{
-    width: 40%;
+#nav-bar h3 {
+    display: inline;
+    margin: 35px;
     cursor: pointer;
+    color: rgb(141, 141, 141);
+    font-size: 18px;
+    
 }
