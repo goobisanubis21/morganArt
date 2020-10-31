@@ -16,12 +16,9 @@ function featuredClick() {
     selected.push(painting, id);
     localStorage.setItem("selected", JSON.stringify(selected))
 
-
-
-
-    // setTimeout(function() {
-    //     window.location.href = "painting.html"
-    // }, 200);
+    setTimeout(function() {
+        window.location.href = "painting.html"
+    }, 200);
     
 }
 

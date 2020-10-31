@@ -1,8 +1,9 @@
-#featured-painting {
+#painting {
     text-align: center;
+    margin: 20px;
 }
 
-#featured-painting img{
+#featured-painting-image{
     width: 40%;
     cursor: pointer;
 }

@@ -1,11 +1,16 @@
 $(document).ready(function() {
 
     var paintingDiv = $("#painting");
-    var selectedPainting = localStorage.getItem("painting");
+    var selectedPainting = JSON.parse(localStorage.getItem("selected"));
     var imgEl = $("<img>");
-    var id = localStorage.getItem("id");
-    imgEl.attr("src", selectedPainting);
-    id.attr("id", id)
+    imgEl.attr("src", selectedPainting[0]);
+    imgEl.attr("id", selectedPainting[1]);
     paintingDiv.prepend(imgEl);
+
+    backBtn = $("#backBtn")
+    backBtn.on("click", function() {
+        localStorage.clear("selected");
+        window.location.href = "index.html";
+    })
 
 })
