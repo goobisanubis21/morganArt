@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    localStorage.clear(selected)
+
     console.log("home");
     
     var selected = JSON.parse(localStorage.getItem("selected"));
@@ -7,11 +9,10 @@ $(document).ready(function() {
             selected = [];
         }
     
-    var selectedPainting = $("#")
+    var selectedPainting = $(".galleryDivs")
     function featuredClick() {
-        console.log("clicked");
         var painting = $(this).attr("src");
-        var id = $(this).attr("id");
+        var id = $(this).attr("class");
     
         selected.push(painting, id);
         localStorage.setItem("selected", JSON.stringify(selected))
@@ -22,5 +23,5 @@ $(document).ready(function() {
         
     }
     
-        featuredPainting.on("click", featuredClick);
+        selectedPainting.on("click", featuredClick);
     });

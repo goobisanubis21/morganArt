@@ -3,10 +3,14 @@
     margin: 20px;
 }
 
-#featured-painting-image{
+.featured-painting-image{
     width: 40%;
 }
 
-#featured-painting-image:hover {
-    transform: scale(2.0);
+.galleryDivs {
+    width: 40%;
+}
+
+.zoomed {
+    width: 100%;
 }
