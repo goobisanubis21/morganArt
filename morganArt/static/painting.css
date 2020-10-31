@@ -5,5 +5,8 @@
 
 #featured-painting-image{
     width: 40%;
-    cursor: pointer;
+}
+
+#featured-painting-image:hover {
+    transform: scale(2.0);
 }

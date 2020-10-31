@@ -1,0 +1,9 @@
+#gallery {
+    text-align: center;
+}
+
+.galleryDivs {
+    width: 40%;
+    margin: 20px;
+    cursor: pointer;
+}

@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 console.log("home");
 
-var selected = JSON.parse(localStorage.getItem("seleced"));
+var selected = JSON.parse(localStorage.getItem("selected"));
     if (selected == null) {
         selected = [];
     }
