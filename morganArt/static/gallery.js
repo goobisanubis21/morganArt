@@ -13,8 +13,11 @@ $(document).ready(function() {
     function featuredClick() {
         var painting = $(this).attr("src");
         var id = $(this).attr("class");
+        var name = $(this).attr("alt")
+        var price = $(this).attr("price");
+        var size = $(this).attr("size");
     
-        selected.push(painting, id);
+        selected.push(painting, id, name, price, size);
         localStorage.setItem("selected", JSON.stringify(selected))
     
         setTimeout(function() {

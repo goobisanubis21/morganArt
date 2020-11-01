@@ -5,12 +5,19 @@
 
 .featured-painting-image{
     width: 40%;
+    cursor: zoom-in;
 }
 
 .galleryDivs {
     width: 40%;
+    cursor: zoom-in;
 }
 
 .zoomed {
     width: 100%;
+    cursor: zoom-out;
+}
+
+#table {
+    text-align: center;
 }
