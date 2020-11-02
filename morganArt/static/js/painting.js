@@ -10,8 +10,8 @@ $(document).ready(function() {
     imgEl.attr("src", selectedPainting[0]);
     imgEl.attr("class", selectedPainting[1]);
     title.text(selectedPainting[2]);
-    size.text(selectedPainting[3]);
-    price.text(selectedPainting[4]);
+    price.text(selectedPainting[3]);
+    size.text(selectedPainting[4]);
     paintingDiv.prepend(imgEl);
     paintingDiv.prepend(title);
     paintingDiv.append(size);
@@ -26,5 +26,14 @@ $(document).ready(function() {
     imgEl.on("click", function() {
         imgEl.toggleClass("zoomed")
     })
+
+    var cartBtn = $("#addToCart");
+
+    function cart() {
+        console.log(title.text());
+        console.log(price.text());
+    }
+
+    cartBtn.on("click", cart);
 
 })
