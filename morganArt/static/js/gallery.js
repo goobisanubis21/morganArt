@@ -1,8 +1,6 @@
 $(document).ready(function() {
 
     localStorage.clear(selected)
-
-    console.log("home");
     
     var selected = JSON.parse(localStorage.getItem("selected"));
         if (selected == null) {

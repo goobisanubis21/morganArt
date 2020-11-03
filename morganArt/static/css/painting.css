@@ -21,3 +21,12 @@
 #table {
     text-align: center;
 }
+
+#addToCart {
+    margin-top: 20px;
+}
+
+#addToCart:hover {
+    background-color: black;
+    color: white;
+}

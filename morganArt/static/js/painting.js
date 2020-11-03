@@ -28,10 +28,14 @@ $(document).ready(function() {
     })
 
     var cartBtn = $("#addToCart");
+    var src = imgEl.attr("src");
+    var cartPainting = title.text();
+    var cartPrice = price.text();
 
     function cart() {
-        console.log(title.text());
-        console.log(price.text());
+        console.log(cartPainting);
+        console.log(src);
+        console.log(cartPrice);
     }
 
     cartBtn.on("click", cart);
