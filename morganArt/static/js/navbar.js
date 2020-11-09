@@ -41,7 +41,7 @@ $(document).ready(function() {
     });
 
     var cart = $("<h3>");
-    cart.text("Cart");
+    cart.text("View Cart");
     cart.attr('id', 'nav-cart');
     navBar.append(cart);
 

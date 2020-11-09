@@ -163,5 +163,11 @@ body {
     cursor: pointer;
     color: rgb(141, 141, 141);
     font-size: 18px;
-    
+}
+
+#nav-cart {
+    position: absolute;
+    right: 50px;
+    top: 0;
+    font-size: 50px;
 }
