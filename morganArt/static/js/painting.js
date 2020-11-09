@@ -42,7 +42,7 @@ $(document).ready(function() {
             cartPaintings = [];
         }
 
-        cartPaintings.push(cartPainting, src, cartPrice)
+        cartPaintings.push([cartPainting, src, cartPrice])
         localStorage.setItem("cartPaintings", JSON.stringify(cartPaintings));
         setTimeout(function() {
             window.location.href = "cart.html"

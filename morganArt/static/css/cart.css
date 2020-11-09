@@ -6,3 +6,13 @@
     margin: 25px;
     width: 40%;
 }
+
+#btnDiv {
+    text-align: center;
+    margin: 10px;
+}
+
+#emptyCart:hover {
+    background-color: teal;
+    color: white;
+}
