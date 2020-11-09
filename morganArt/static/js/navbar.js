@@ -39,6 +39,16 @@ $(document).ready(function() {
         window.location.href = "contact.html"
         console.log("contact");
     });
+
+    var cart = $("<h3>");
+    cart.text("Cart");
+    cart.attr('id', 'nav-cart');
+    navBar.append(cart);
+
+    cart.on("click", function() {
+        window.location.href = "cart.html"
+        console.log("cart");
+    });
     
 
 });

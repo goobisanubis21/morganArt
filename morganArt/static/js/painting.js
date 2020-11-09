@@ -19,7 +19,7 @@ $(document).ready(function() {
 
     backBtn = $("#backBtn")
     backBtn.on("click", function() {
-        localStorage.clear("selected");
+        localStorage.removeItem("selected");
         window.history.back();
     })
 
@@ -36,6 +36,17 @@ $(document).ready(function() {
         console.log(cartPainting);
         console.log(src);
         console.log(cartPrice);
+
+        var cartPaintings = JSON.parse(localStorage.getItem("cartPaintings"));
+        if (cartPaintings == null) {
+            cartPaintings = [];
+        }
+
+        cartPaintings.push(cartPainting, src, cartPrice)
+        localStorage.setItem("cartPaintings", JSON.stringify(cartPaintings));
+        setTimeout(function() {
+            window.location.href = "cart.html"
+        }, 200);
     }
 
     cartBtn.on("click", cart);
