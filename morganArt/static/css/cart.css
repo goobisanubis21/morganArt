@@ -16,3 +16,16 @@
     background-color: teal;
     color: white;
 }
+
+#total {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px;
+}
+
+#cartHeader {
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(6, 145, 133);
+}

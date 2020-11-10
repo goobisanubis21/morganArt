@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     var paintingDiv = $("#painting");
 
@@ -18,12 +18,12 @@ $(document).ready(function() {
     paintingDiv.append(price);
 
     backBtn = $("#backBtn")
-    backBtn.on("click", function() {
+    backBtn.on("click", function () {
         localStorage.removeItem("selected");
         window.history.back();
     })
 
-    imgEl.on("click", function() {
+    imgEl.on("click", function () {
         imgEl.toggleClass("zoomed")
     })
 
@@ -37,6 +37,14 @@ $(document).ready(function() {
         console.log(src);
         console.log(cartPrice);
 
+        var paintingPrice = JSON.parse(localStorage.getItem("paintingPrice"));
+        if (paintingPrice == null) {
+            paintingPrice = [];
+        }
+
+        paintingPrice.push(cartPrice)
+        localStorage.setItem("paintingPrice", JSON.stringify(paintingPrice));
+
         var cartPaintings = JSON.parse(localStorage.getItem("cartPaintings"));
         if (cartPaintings == null) {
             cartPaintings = [];
@@ -44,7 +52,7 @@ $(document).ready(function() {
 
         cartPaintings.push([cartPainting, src, cartPrice])
         localStorage.setItem("cartPaintings", JSON.stringify(cartPaintings));
-        setTimeout(function() {
+        setTimeout(function () {
             window.location.href = "cart.html"
         }, 200);
     }
